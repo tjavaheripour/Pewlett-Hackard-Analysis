@@ -56,6 +56,8 @@ We used [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/bl
 In this query, We used the DISTINCT ON statement to create a table that contains the most recent title of each employee and prevent duplicate employees who have held more than one title with Pewlett Hackard.Also to create this table, We join the Employees and the Titles tables on e.emp_no as primary key.
 - There are 1549 employee eligible for the mentorship program
 
+##### Export mentorship_eligibilty.csv 
+
      SELECT DISTINCT ON (e.emp_no) e.emp_no,
      e.first_name,
      e.last_name,
