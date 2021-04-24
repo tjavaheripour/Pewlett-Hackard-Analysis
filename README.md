@@ -10,7 +10,9 @@ In this project we used the ERD, Employee Database with PostgreSQL and knowledge
 ## Results
 
 
-#### DELIVERABLE 1 
+#### DELIVERABLE 1 : The Number of Retiring Employees by Title
+
+
      SELECT e.emp_no,
      e.first_name,
      e.last_name,
@@ -49,7 +51,9 @@ In this project we used the ERD, Employee Database with PostgreSQL and knowledge
 
  - ![retiring_titles.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles.PNG)
 
-#### DELIVERABLE 2 
+#### DELIVERABLE 2 : The Employees Eligible for the Mentorship Program
+We used [the ERD] (https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png) created in this module as a reference and your knowledge of SQL queries, create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
+
      SELECT DISTINCT ON (e.emp_no) e.emp_no,
      e.first_name,
      e.last_name,
