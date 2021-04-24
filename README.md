@@ -55,7 +55,7 @@ In this query, we used COUNT() to retrieve the number of titles and GROUP BY fun
      ORDER BY COUNT (ut.emp_no) DESC;
      SELECT * from retiring_titles
 
- - ![retiring_titles.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles.PNG)
+  ![retiring_titles.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles.PNG)
 
 #### DELIVERABLE 2 : The Employees Eligible for the Mentorship Program
 We used [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png) to write a query and create a mentorship-eligibility table that holds the current employees who are eligible to particpate in Pewlett Hackard's mentorship program and were born between January 1, 1965 and December 31, 1965.
@@ -82,7 +82,7 @@ In this query, We used the DISTINCT ON statement to create a table that contains
      ORDER BY emp_no;
      SELECT * from mentorship_eligibility
 
- - ![mentorship_eligibility.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility.PNG)
+  ![mentorship_eligibility.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility.PNG)
 
 
 ## Summary
