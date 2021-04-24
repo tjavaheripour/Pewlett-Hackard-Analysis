@@ -27,7 +27,7 @@ In this project we used the ERD, Employee Database with PostgreSQL and knowledge
 
  - ![retirement_titles.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/retirement_titles.PNG)
 
-#### Use Dictinct with Orderby to remove duplicate rows
+##### Use Dictinct with Orderby to remove duplicate rows
      SELECT DISTINCT ON (rt.emp_no) rt.emp_no,
      rt.first_name,
      rt.last_name,
@@ -39,7 +39,7 @@ In this project we used the ERD, Employee Database with PostgreSQL and knowledge
 
  - ![unique_titles.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/unique_titles.PNG)
  
-#### Unique_titles
+##### Unique_titles
      SELECT COUNT(ut.emp_no), ut.title
      INTO retiring_titles
      FROM unique_titles as ut
