@@ -9,10 +9,12 @@ In this project we used [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hac
 
 ## Results
 
-
 #### DELIVERABLE 1 : The Number of Retiring Employees by Title
 
+Using [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png) to write a query that create a Retirement Titles table which holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. 
 
+- In the first step, the table holds all the titles of current employees which are 133,776 employee.
+##### Export retirement_titles.csv
      SELECT e.emp_no,
      e.first_name,
      e.last_name,
