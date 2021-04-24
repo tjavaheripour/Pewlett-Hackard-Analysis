@@ -41,7 +41,10 @@ In this project we used [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hac
 
  - ![unique_titles.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/unique_titles.PNG)
  
-##### Unique_titles
+##### Retrieve the number of employees by their most recent job title who are about to retire
+In this query, we used COUNT() to retrieve the number of titles and GROUP BY functions to group the table by title, then sort the count column in descending order.
+
+##### Export retiring_titles.csv
      SELECT COUNT(ut.emp_no), ut.title
      INTO retiring_titles
      FROM unique_titles as ut
