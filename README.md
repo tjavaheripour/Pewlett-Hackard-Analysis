@@ -3,7 +3,7 @@
 
 ## Overview of the analysis :
 
-In this project we used the ERD, Employee Database with PostgreSQL and knowledge of SQL queries to get the required information: 
+In this project we used [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png), Employee Database with PostgreSQL and knowledge of SQL queries to get the required information: 
 1. Determine the number of employees retiring per title
 2. Identify employees who are eligible to participate in a mentorship program.
 
@@ -52,7 +52,9 @@ In this project we used the ERD, Employee Database with PostgreSQL and knowledge
  - ![retiring_titles.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles.PNG)
 
 #### DELIVERABLE 2 : The Employees Eligible for the Mentorship Program
-We used [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png) created in this module as a reference and your knowledge of SQL queries, create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
+We used [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png) to write a query and create a mentorship-eligibility table that holds the current employees who are eligible to particpate in Pewlett Hackard's mentorship program and were born between January 1, 1965 and December 31, 1965.
+In this query, We used the DISTINCT ON statement to create a table that contains the most recent title of each employee and prevent duplicate employees who have held more than one title with Pewlett Hackard.Also to create this table, We join the Employees and the Titles tables on e.emp_no as primary key.
+- There are 1549 employee eligible for the mentorship program
 
      SELECT DISTINCT ON (e.emp_no) e.emp_no,
      e.first_name,
