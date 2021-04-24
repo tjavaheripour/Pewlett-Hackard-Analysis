@@ -30,6 +30,9 @@ In this project we used [ the ERD ](https://github.com/tjavaheripour/Pewlett-Hac
  - ![retirement_titles.PNG](https://github.com/tjavaheripour/Pewlett-Hackard-Analysis/blob/main/Resources/retirement_titles.PNG)
 
 ##### Use Dictinct with Orderby to remove duplicate rows
+There are duplicate entries for some employees because they have switched titles over the years. We created a query to remove these duplicates and keep only the most recent title of each employee.
+- There are 90,398 employee who will be retiring soon.
+##### Export unique_titles.csv
      SELECT DISTINCT ON (rt.emp_no) rt.emp_no,
      rt.first_name,
      rt.last_name,
