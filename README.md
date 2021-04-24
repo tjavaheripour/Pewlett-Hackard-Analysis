@@ -97,4 +97,7 @@ By running this query, we can see 90,398 potential positions will need to be fil
 
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
+      select count (ut.title)
+      from unique_titles as ut
  
+There are about 1549 employees who can become mentors.
